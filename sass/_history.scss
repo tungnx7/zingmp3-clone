@@ -1,0 +1,28 @@
+.history {
+    &-header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    &-title {
+        color: white;
+        text-transform: capitalize;
+    }
+    &-show {
+        display: flex;
+        align-items: center;
+        color: $gray-text;
+        text-transform: uppercase;
+        font-size: 13px;
+        opacity: 0;
+        transition: all 0.4s linear;
+    }
+    &-show:hover {
+        opacity: 1;
+        color: $primary-color;
+        cursor: pointer;
+    }
+    &-icon {
+        margin-left: 10px;
+    }
+}

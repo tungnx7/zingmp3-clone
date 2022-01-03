@@ -20,6 +20,9 @@ picture {
 body {
   min-height: 100vh;
   line-height: 1.5;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
 }
 
 input,
@@ -46,11 +49,127 @@ picture {
     scroll-behavior: auto !important;
   }
 }
+.container {
+  padding: 0 30px 40px;
+}
+
 .menuleft {
   max-width: 100%;
   width: 240px;
-  height: 100%;
+  height: 936px;
   background-color: red;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.menuright {
+  width: 330px;
+  height: 936px;
+  background-color: yellow;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+.main {
+  padding: 10px 360px 0 270px;
+  background-color: #170F23;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding-bottom: 35px;
+}
+.header-icons-left {
+  margin-right: 25px;
+  font-size: 20px;
+  color: #443D4D;
+}
+.header-icon-left {
+  margin-right: 25px;
+}
+.header-search {
+  padding: 12px;
+  width: 540px;
+  border-radius: 20px;
+  border: 0;
+  outline: none;
+}
+.header-icons-right {
+  color: #443D4D;
+  margin-left: auto;
+  font-size: 20px;
+}
+.header-icon-right {
+  border: 1px solid #dddddd;
+  padding: 10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 100rem;
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.icon-shirt {
+  color: linear-gradient(90deg, #940909 0%, #170cd9 30%, #490b86 58%, #ffa600 100%);
+  color: white;
+}
+.icon-upload {
+  color: white;
+}
+.icon-settings {
+  color: white;
+}
+.icon-person {
+  color: white;
+  background-color: #ccc;
+}
+
+.banner {
+  display: flex;
+  margin-bottom: 50px;
+}
+.banner-img {
+  border-radius: 10px;
+  width: 390px;
+  height: 220px;
+  object-fit: cover;
+  background-image: url(https://znews-stc.zdn.vn/static/topic/person/ducphuc.jpg);
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+.banner-img:not(:last-child) {
+  margin-right: 30px;
+}
+
+.history-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.history-title {
+  color: white;
+  text-transform: capitalize;
+}
+.history-show {
+  display: flex;
+  align-items: center;
+  color: #78747F;
+  text-transform: uppercase;
+  font-size: 13px;
+  opacity: 0;
+  transition: all 0.4s linear;
+}
+.history-show:hover {
+  opacity: 1;
+  color: #47265B;
+  cursor: pointer;
+}
+.history-icon {
+  margin-left: 10px;
 }
 
 /*# sourceMappingURL=app.css.map */

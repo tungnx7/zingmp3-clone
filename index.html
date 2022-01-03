@@ -7,7 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <link rel="stylesheet" href="./css/app.css">
     <title>Zing MP3 | Nghe tải nhạc chất lượng</title>
 </head>
@@ -17,7 +18,52 @@
 
         </div>
         <div class="main">
-
+            <div class="header">
+                <div class="header-icons-left">
+                    <ion-icon name="arrow-back-outline" class="header-icons-left" ></ion-icon>
+                    <ion-icon name="arrow-forward-outline" class="header-icons-left"></ion-icon>
+                </div>
+                <div>
+                    <ion-icon name="search-outline icon-search"></ion-icon>
+                    <input type="text" class="header-search" placeholder="Nhập tên bài hát, nghệ sĩ hoặc MV"> 
+                </div>
+                <div class="header-icons-right">
+                    <ion-icon name="shirt-outline" class="header-icon-right icon-shirt"></ion-icon>
+                    <ion-icon name="cloud-upload-outline" class="header-icon-right icon-upload"></ion-icon>
+                    <ion-icon name="settings-outline" class="header-icon-right icon-settings"></ion-icon>
+                    <ion-icon name="person-outline" class="header-icon-right icon-person"></ion-icon>
+                </div>
+            </div>
+            <div class="container">               
+                <div class="banner">
+                    <div class="banner-img">
+                        <div class="banner-content">V-pop tophits</div>                   
+                    </div>
+                    <div class="banner-img">
+                        <div class="banner-content">V-pop tophits</div>                   
+                    </div>
+                    <div class="banner-img">
+                        <div class="banner-content">V-pop tophits</div>                   
+                    </div>               
+                </div>
+                <div class="history">
+                    <div class="history-header">
+                        <h2 class="history-title">gần đây</h2>
+                        <div class="history-show">
+                            <h3 class="history-heading">tất cả</h3>
+                            <ion-icon name="chevron-forward-outline" class="history-icon"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="history-album">
+                        <div class="history-img">
+                            <ion-icon name="heart-outline"></ion-icon>
+                            <ion-icon name="play-circle-outline"></ion-icon>
+                            <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
+                        </div>
+                        <div class="history-name">Top 100 bài hát nhạc trẻ hay nhất</div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="menuright">
 
