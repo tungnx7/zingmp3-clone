@@ -168,8 +168,225 @@ picture {
   color: #47265B;
   cursor: pointer;
 }
+.history-img {
+  width: 150px;
+  height: 150px;
+  background-image: url(https://znews-stc.zdn.vn/static/topic/person/ducphuc.jpg);
+  background-size: cover;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.history-album {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 0 30px;
+}
 .history-icon {
-  margin-left: 10px;
+  color: white;
+  font-size: 20px;
+  transition: all 0.2s linear;
+  opacity: 0;
+}
+.history-icon-play {
+  opacity: 0;
+  border: 1px solid white;
+  border-radius: 100px;
+  padding: 10px;
+  font-size: 22px;
+  margin-left: 20px;
+  margin-right: 15px;
+  color: white;
+}
+.history-icon:hover {
+  opacity: 1;
+  display: block;
+  cursor: pointer;
+  border: 0px solid white;
+  border-radius: 100px;
+  background-color: #bbb;
+  padding: 8px;
+}
+.history-icon-play:hover {
+  display: block;
+  opacity: 0.7;
+  background-color: inherit;
+  cursor: pointer;
+}
+.history-name {
+  color: white;
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 14px;
+  text-transform: capitalize;
+  margin-bottom: 40px;
+}
+.history-name:hover {
+  color: #954BB6;
+  cursor: pointer;
+}
+
+.suggest-title {
+  color: white;
+  text-transform: capitalize;
+  margin-bottom: 25px;
+}
+.suggest-album {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 0 25px;
+}
+.suggest-img {
+  width: 225px;
+  height: 225px;
+  background-image: url(https://znews-stc.zdn.vn/static/topic/person/ducphuc.jpg);
+  background-size: cover;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.suggest-icon {
+  color: white;
+  font-size: 24px;
+  transition: all 0.2s linear;
+  opacity: 0;
+}
+.suggest-icon-play {
+  opacity: 0;
+  border: 1px solid white;
+  border-radius: 100px;
+  padding: 10px;
+  font-size: 26px;
+  margin-left: 20px;
+  margin-right: 15px;
+  color: white;
+}
+.suggest-icon:hover {
+  opacity: 1;
+  display: block;
+  cursor: pointer;
+  border: 0px solid white;
+  border-radius: 100px;
+  background-color: #bbb;
+  padding: 8px;
+}
+.suggest-icon-play:hover {
+  display: block;
+  opacity: 0.7;
+  background-color: inherit;
+  cursor: pointer;
+}
+.suggest-name {
+  color: white;
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+.suggest-name:hover {
+  color: #954BB6;
+  cursor: pointer;
+}
+.suggest-singer {
+  font-size: 13px;
+  color: #78747F;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  max-width: 100%;
+  word-break: break-word;
+  margin-bottom: 40px;
+}
+.suggest-singer:hover {
+  color: #954BB6;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.bestchoice-title {
+  color: white;
+  text-transform: capitalize;
+  margin-bottom: 25px;
+}
+.bestchoice-album {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 0 25px;
+}
+.bestchoice-img {
+  width: 225px;
+  height: 225px;
+  background-image: url(https://znews-stc.zdn.vn/static/topic/person/ducphuc.jpg);
+  background-size: cover;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bestchoice-icon {
+  color: white;
+  font-size: 24px;
+  transition: all 0.2s linear;
+  opacity: 0;
+}
+.bestchoice-icon-play {
+  opacity: 0;
+  border: 1px solid white;
+  border-radius: 100px;
+  padding: 10px;
+  font-size: 26px;
+  margin-left: 20px;
+  margin-right: 15px;
+  color: white;
+}
+.bestchoice-icon:hover {
+  opacity: 1;
+  display: block;
+  cursor: pointer;
+  border: 0px solid white;
+  border-radius: 100px;
+  background-color: #bbb;
+  padding: 8px;
+}
+.bestchoice-icon-play:hover {
+  display: block;
+  opacity: 0.7;
+  background-color: inherit;
+  cursor: pointer;
+}
+.bestchoice-name {
+  color: white;
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+.bestchoice-name:hover {
+  color: #954BB6;
+  cursor: pointer;
+}
+.bestchoice-desc {
+  font-size: 13px;
+  color: #78747F;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  max-width: 100%;
+  word-break: break-word;
+  margin-bottom: 40px;
+}
+.bestchoice-desc:hover {
+  color: #954BB6;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=app.css.map */

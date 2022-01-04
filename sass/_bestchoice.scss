@@ -1,0 +1,82 @@
+.bestchoice {
+    &-title {
+        color: white;
+        text-transform: capitalize;
+        margin-bottom: 25px;
+    }
+    &-album {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-gap: 0 25px;
+    }
+    &-img {
+        width: 225px;
+        height: 225px;
+        background-image: url(https://znews-stc.zdn.vn/static/topic/person/ducphuc.jpg);
+        background-size: cover;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      &-icon {
+        color: white;
+        font-size: 24px;
+        transition: all 0.2s linear;
+        opacity: 0;
+        &-play {
+        opacity: 0;
+            border: 1px solid white;
+            border-radius: 100px;
+            padding: 10px;
+            font-size: 26px;
+            margin-left: 20px;
+            margin-right: 15px;
+            color: white;
+        }
+    }
+    &-icon:hover {
+        opacity: 1;
+        display: block;
+        cursor: pointer;
+        border: 0px solid white;
+        border-radius: 100px;
+        background-color: #bbb;
+        padding: 8px;      
+    }
+    &-icon-play:hover {
+        display: block;
+        opacity: 0.7;
+        background-color: inherit;
+        cursor: pointer;
+    }
+    &-name {
+        color: white;
+        font-weight: bold;
+        margin-top: 10px;
+        font-size: 14px;
+        text-transform: capitalize;
+    }
+    &-name:hover {
+        color: $hover-color;
+        cursor: pointer;
+    }
+    &-desc {
+        font-size: 13px;
+        color: $gray-text;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 100%;
+        max-width: 100%;
+        word-break: break-word;
+        margin-bottom: 40px;
+    }
+    &-desc:hover {
+        color: $hover-color;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
